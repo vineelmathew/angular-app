@@ -21,7 +21,15 @@ welcome()
   console.log("welcome mathew ");
   
 }
+blueColor="blue";
 
-
+red="red";
+blue="blue";
+green="green";
+pickedcolor=false;
+pcolor(color:string):boolean
+{
+return color==this.red;
+}
 
 }

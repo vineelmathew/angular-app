@@ -1,5 +1,24 @@
 <h2><input type="text" [(ngModel)]="name"></h2>
 <p>you are entering {{name}}</p>
 <img [src]="imgPath" alt="" width="20%" height="10%">
-
 <input type="button" value="click me" (click)="welcome()">
+
+
+<h3 class="blue">class binding demo</h3>
+<h3 class="red">class binding demo</h3>
+<h3 [class]="blueColor">class binding demo</h3>
+<h3 [ngClass]="{
+'red':pcolor(red)}">Using Ng class</h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
