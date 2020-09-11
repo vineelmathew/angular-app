@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { UsersComponent } from './users/users.component';
 import { SecondComponent } from './second/second.component';
 import {yearpipe} from './pipes/yearpipe';
+import { FormsComponent } from './forms/forms.component';
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
     SecondComponent,
     yearpipe,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
