@@ -2,16 +2,22 @@
 <p>you are entering {{name}}</p>
 <img [src]="imgPath" alt="" width="20%" height="10%">
 <input type="button" value="click me" (click)="welcome()">
-
-
 <h3 class="blue">class binding demo</h3>
 <h3 class="red">class binding demo</h3>
 <h3 [class]="blueColor">class binding demo</h3>
-<h3 [ngClass]="{
-'red':pcolor(red)}">Using Ng class</h3>
+<h3 [ngClass]="{'red':pcolor(red)}">Using Ng class</h3>
+
+<!-- <h2>Students details are {{stu.getAge()}}, {{stu.getName()}}</h2>
+<h2>I think you born in {{age|yearpipe:age}}  </h2> -->
+
+<div *ngFor="let student of students; let i=index">
+
+   <h4> {{i+1}}. {{student.getAge()}} {{student.getName()}} 
+        born in {{student.getAge()|yearpipe:student.getAge()}}</h4>
+      
 
 
-
+</div>
 
 
 
